@@ -285,6 +285,16 @@ with st.container():
                 knn_pred = knn.predict(X_test)
                 predict_knn = knn.predict(pred)[0]
                 st.write("Hasil Prediksi = ", predict_knn)
+                if predict_knn == 1 :
+                    st.write("Tingkat Kesehatan Sangat Rendah")
+                elif predict_knn == 2 :
+                    st.write("Tingkat Kesehatan Rendah")
+                elif predict_knn == 3 :
+                    st.write("Tingkat Kesehatan Cukup Baik")
+                elif predict_knn == 4 :
+                    st.write("Tingkat Kesehatan Baik")
+                elif predict_knn == 5 :
+                    st.write("Tingkat Kesehatan Sangat Baik")
 
         elif choose_model == "NAIVE BAYES" :
             submit = st.button("Predict Score")
@@ -296,6 +306,17 @@ with st.container():
                 predict_gaussian = gaussian.predict(X_test)
                 predict_gaussian = gaussian.predict(pred)[0]
                 st.write("Hasil Prediksi = ", predict_gaussian)
+                st.write("Hasil Prediksi : ", predict_gaussian)
+                if predict_gaussian == 1 :
+                    st.write("Tingkat Kesehatan Sangat Rendah")
+                elif predict_gaussian == 2 :
+                    st.write("Tingkat Kesehatan Rendah")
+                elif predict_gaussian == 3 :
+                    st.write("Tingkat Kesehatan Cukup Baik")
+                elif predict_gaussian == 4 :
+                    st.write("Tingkat Kesehatan Baik")
+                elif predict_gaussian == 5 :
+                    st.write("Tingkat Kesehatan Sangat Baik")
 
         elif choose_model == "DECISION TREE" :
             submit = st.button("Predict Score")
@@ -307,6 +328,16 @@ with st.container():
                 predict_tree = tree.predict(X_test)
                 predict_tree = tree.predict(pred)[0]
                 st.write("Hasil Prediksi = ", predict_tree)
+                if predict_tree == 1 :
+                    st.write("Tingkat Kesehatan Sangat Rendah")
+                elif predict_tree == 2 :
+                    st.write("Tingkat Kesehatan Rendah")
+                elif predict_tree == 3 :
+                    st.write("Tingkat Kesehatan Cukup Baik")
+                elif predict_tree == 4 :
+                    st.write("Tingkat Kesehatan Baik")
+                elif predict_tree == 5 :
+                    st.write("Tingkat Kesehatan Sangat Baik")
 
 
 
