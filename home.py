@@ -306,7 +306,6 @@ with st.container():
                 predict_gaussian = gaussian.predict(X_test)
                 predict_gaussian = gaussian.predict(pred)[0]
                 st.write("Hasil Prediksi = ", predict_gaussian)
-                st.write("Hasil Prediksi : ", predict_gaussian)
                 if predict_gaussian == 1 :
                     st.write("Tingkat Kesehatan Sangat Rendah")
                 elif predict_gaussian == 2 :
